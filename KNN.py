@@ -45,13 +45,13 @@ age = st.slider("Age", 20, 100, 40)
 gender = st.selectbox("Gender", ["Male", "Female"])
 height = st.number_input("Height (cm)", 0, 300, 160)
 weight = st.number_input("Weight (kg)", 0, 200, 70)
-ap_hi = st.number_input("Systolic Blood Pressure", 0, 300, 120)
-ap_lo = st.number_input("Diastolic Blood Pressure", 0, 200, 80)
+ap_hi = st.number_input("ap_hi", 0, 300, 120)
+ap_lo = st.number_input("ap_lo", 0, 200, 80)
 cholesterol = st.selectbox("Cholesterol Level", [1, 2, 3])
 gluc = st.selectbox("Glucose Level", [1, 2, 3])
 smoke = st.selectbox("Smoking", [0, 1])
 alco = st.selectbox("Alcohol Intake", [0, 1])
-active = st.selectbox("Physical Activity", [0, 1])
+active = st.selectbox("Cardio", [0, 1])
 
 # Map gender to numeric values
 gender = 0 if gender == "Male" else 1
