@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 import streamlit as st
 
 # Load the dataset
-df = pd.read_csv(r"C:\Users\twsha\Downloads\heart_data.csv")
+df = pd.read_csv(r"heart_data.csv")
 del df['id']
 df.index = df['index']
 df['age'] = df['age'].apply(lambda x: int(x/365))
